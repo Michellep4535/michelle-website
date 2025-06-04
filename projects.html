@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects – Michelle Polo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      padding: 20px;
+      background-color: #ecf0e4;
+    }
+    .header{
+                display: flex; 
+                flex-direction: column; 
+                justify-content: flex-start;
+                align-items: flex-start;
+                height:720px;
+                padding:40px;
+                text-align: start;
+                color: black; 
+                text-align: start;
+            }
+            .topnav {
+            
+            background-color: black;
+            overflow: hidden; 
+        }
+        .topnav a{
+            float: left; 
+            color: #ecf0e4;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px; 
+        }
+        .topnav a:hover, .dropdown:hover .dropbtn{
+            background-color: black;
+            color: grey;
+        }
+        .dropdown-content a:hover {
+            background-color: black;
+            color: #e7ebdf;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .active {
+            background-color: black;
+            color: grey;
+        }
+        .topnav .icon {
+            display: none; 
+        }
+        .dropdown {
+            float: left; 
+            overflow: hidden; 
+        }
+        .dropdown .dropbtn {
+            font-size: 17px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none; 
+            position:absolute; 
+            background-color: grey;
+            min-width: 160px; 
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1; 
+        }
+        .dropdown-content a {
+            float: none; 
+            color: black; 
+            padding: 12px 16px; 
+            text-decoration: none; 
+            display: block; 
+            text-align: left;
+        }
+        @media screen and (max-width: 600px){
+            .topnav a:not(:first-child), .dropdown .dropbtn {
+                display: none;
+            }
+            .topnav a.icon {
+                float: right; 
+                display: block; 
+            }
+        }
+        @media screen and (max-width: 600px){
+            .topnav.responsive {position: relative;}
+            .topnav.responsive a.icon {
+                position: absolute; 
+                right: 0; 
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none; 
+                display: block; 
+                text-align: left;
+            }
+            .topnav.responsive .dropdown {float: none;}
+            .topnav.responsive .dropdown-content {position: relative;}
+            .topnav.responsive .dropdown .dropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+        .slider {
+            position: relative; 
+            max-width: 900px;
+            margin: auto; 
+            text-align: center;
+        }
+        .slider img{
+            width: 100%; 
+            height: auto; 
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+        .slider button {
+            position: absolute; 
+            top: 50%; 
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white; 
+            font-size: 24px;
+            border: none; 
+            padding: 10px; 
+            cursor: pointer; 
+            border-radius: 50%;
+        }
+        #prevBtn {
+            left: 10px; 
+        }
+        #nextBtn {
+            right: 10px;
+        }
+        .pdf-button {
+            display: inline-block;
+            background-color: #2c3e50;
+            color: #ecf0e4;
+            padding: 10px 20px;
+            margin-top: 15px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            transition: 0.3s ease;
+        }
+
+        .pdf-button:hover {
+            background-color: #34495e;
+            border-color: #bdc3c7;
+            color: #fff;
+        }
+  </style>
+</head>
+<body>
+    <div class="topnav">
+            <a class="active" href="#projects">Projects       |</a>
+            <a href="Michelle_Website.html">Home</a>
+            <a href="#research">Research</a>
+            <a href="#teaching&materials">Teaching & Materials</a>
+            <div class="dropdown">
+                <button class="dropbtn">Photography
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Grad Photoshoots</a>
+                    <a href="#">Photography Class Final</a>
+                    <a href="#">Barcelona, Spain</a>
+                    <a href="#">Menorca, Spain</a>
+                    <a href="#">London, United Kingdom</a>
+                    <a href="#">Reykjavík, Iceland</a>
+                    <a href="#">Bellingham, WA</a>
+                </div>
+            </div>
+        </div>
+
+    <div class="header">
+        <div class="header-content">
+            <h1>My Projects</h1>
+            <hr>
+            <p>Welcome to my project showcase! Here I have uploaded some personal projects I have completed 
+            as well as university related final projects I feel are worth sharing. 
+            <hr>
+            <h3>TESL411: Linguistics & Second Language Acquisition | Final Project; </h3>
+            <em><strong><p>New Parent Bilingual Education Website:</strong> Bilingual Beginnings</p></em>
+            <p>The purpose of this project was to have a cumulative reflection of subjects learned over the course 
+                and to consolidate that information into a simple, usable, project. 
+            </p>
+            <div class="slider">
+                <button id="prevBtn">&#10094;</button>
+                <img id="sliderimage" src="BilingualBeginnings/HomePage/HomePage1.png" alt="Project Screenshot">
+                <button id="nextBtn">&#10095;</button>
+            </div>
+            <p>Due to the limitations of SquareSpace, where this project was made,
+                screen shots of my completed website are viewable above. Below I have 
+                linked the 'At Home Lesson Plan' developed by me for at home parents teaching 
+                their child a second language. 
+            </p>
+            <a href="ParentLessonPlan.pdf" class="pdf-button" target="_blank">📄 View Parent Lesson Plan (PDF)</a>
+            </p>
+            <hr>
+            <h3>LING321: Linguistics Morphology & Syntax | Final Project; </h3>
+            <em><strong><p>Final Assignment Lesson Plan:</strong> Russian Case Endings + Instructor Notes</em></p>
+            <p>The purpose of this project was to utlize linguistic tools to direct students in the 
+                right direction based on given term endings and sentence structure to develop a deeper understanding 
+                of Russian case endings. 
+            </p>
+            <div class="document-preview">
+                <img src="Lesson.png" alt="Lesson">
+                <img src="InstructorNotes.png" alt="Instructor Notes">
+            </div>
+            <a href="FinalAssignmentLING321/FinalAssignmentLessonLING321.pdf" class="pdf-button" target="_blank">📄 View Lesson</a>
+            <a href="FinalAssignmentLING321/FinalAssingmentInstructorNotesLING321.pdf" class="pdf-button" target="_blank">📄 View Instructor Notes</a>
+            <hr>
+        </div> 
+    </div>
+   <script>
+    const sections = [
+        "BilingualBeginnings/HomePage/HomePage1.png", 
+        "BilingualBeginnings/HomePage/HomePage2.png", 
+        "BilingualBeginnings/HomePage/HomePage3.png", 
+        "BilingualBeginnings/HomePage/HomePage4.png", 
+        "BilingualBeginnings/WhyBilingualism/WhyBilingualism1.png",
+        "BilingualBeginnings/WhyBilingualism/WhyBilingualism2.png",
+        "BilingualBeginnings/WhyBilingualism/WhyBilingualism3.png",
+        "BilingualBeginnings/WhyBilingualism/WhyBilingualism4.png",
+        "BilingualBeginnings/WhyBilingualism/WhyBilingualism5.png",
+        "BilingualBeginnings/GettingStarted/GettingStarted1.png",
+        "BilingualBeginnings/GettingStarted/GettingStarted2.png",
+        "BilingualBeginnings/GettingStarted/GettingStarted3.png",
+        "BilingualBeginnings/GettingStarted/GettingStarted4.png",
+        "BilingualBeginnings/GettingStarted/GettingStarted5.png",
+        "BilingualBeginnings/GettingStarted/GettingStarted6.png",
+        "BilingualBeginnings/GettingStarted/GettingStarted7.png",
+        "BilingualBeginnings/GettingStarted/GettingStarted8.png",
+        "BilingualBeginnings/GettingStarted/GettingStarted9.png",
+        "BilingualBeginnings/Methods/Methods1.png",
+        "BilingualBeginnings/Methods/Methods2.png",
+        "BilingualBeginnings/Methods/Methods3.png",
+        "BilingualBeginnings/Methods/Methods4.png",
+        "BilingualBeginnings/Methods/Methods5.png",
+        "BilingualBeginnings/Methods/Methods6.png",
+        "BilingualBeginnings/Methods/Methods7.png",
+        "BilingualBeginnings/Methods/Methods8.png",
+        "BilingualBeginnings/Challenges/Challenges1.png",
+        "BilingualBeginnings/Challenges/Challenges2.png",
+        "BilingualBeginnings/Challenges/Challenges3.png",
+        "BilingualBeginnings/Challenges/Challenges4.png",
+        "BilingualBeginnings/ParentResources/ParentResources1.png",
+        "BilingualBeginnings/ParentResources/ParentResources2.png",
+        "BilingualBeginnings/ParentResources/ParentResources3.png",
+        "BilingualBeginnings/ParentResources/ParentResources4.png",
+        "BilingualBeginnings/ParentResources/ParentResources5.png",
+        "BilingualBeginnings/ParentResources/ParentResources6.png",
+        "BilingualBeginnings/HomePage/HomePage5.png"
+    ]; 
+    let currentIndex = 0; 
+    const imageElement = document.getElementById("sliderimage"); 
+    document.getElementById("prevBtn").addEventListener("click", () => {
+        currentIndex =(currentIndex - 1 + sections.length) % sections.length;
+        imageElement.src = sections[currentIndex];
+    });
+    document.getElementById("nextBtn").addEventListener("click", () => {
+        currentIndex =(currentIndex + 1) % sections.length;
+        imageElement.src = sections[currentIndex];
+    });
+   </script>
+</body>
+</html>
